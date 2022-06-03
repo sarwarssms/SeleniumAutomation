@@ -1,0 +1,4 @@
+Tests\SearchTest.class
+Utilities\TestSuiteBase.class
+PageObjects\HomePage.class
+PageObjects\SearchResultPage.class

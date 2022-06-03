@@ -1,0 +1,19 @@
+
+<!-- <suite name="TestSuite" parallel="tests"> -->
+<suite name="TestSuite">
+
+
+	<test name="Chrome Test">
+		<parameters>
+			<parameter name="browser" value="chrome" />
+			<parameter name="version" value="ANY" />
+			<parameter name="platform" value="WINDOWS" />
+			<parameter name="url" value="http://www.wikipedia.org" />
+		</parameters>
+		<classes>
+			<class name="Tests.SearchTest" />
+			
+		
+		</classes>
+	</test>
+</suite>
