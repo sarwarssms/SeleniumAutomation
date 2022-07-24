@@ -30,6 +30,7 @@ public class TestSuiteBaseTempleteRemoteWebdriver {
 		homepage = PageFactory.initElements(driver, HomePage.class);
 		searchresultpage = PageFactory.initElements(driver, SearchResultPage.class);
 		
+		
 	}
 
 	public static WebDriver getDriverInstance(String platform, String browser, String version, String url)
