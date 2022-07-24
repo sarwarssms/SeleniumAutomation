@@ -5,6 +5,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import PageObjects.HomePage;
 import Utilities.TestSuiteBase;
 
 public class SearchTest extends TestSuiteBase {
@@ -16,8 +17,9 @@ public class SearchTest extends TestSuiteBase {
 	@Test(priority = 1)
 	public void firstSearchTest() throws InterruptedException {
 		OsBrowser = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
-		searchresultpage.fillUpSearchBox("albor");
-		searchresultpage.clickSearchButton();
+		homepage.fillUpSearchBox("albor");
+		homepage.clickwikiSearchButton();
+		
 		Thread.sleep(5000);
 		Assert.assertEquals(searchresultpage.firstHeading(), "Albor");
 	}
