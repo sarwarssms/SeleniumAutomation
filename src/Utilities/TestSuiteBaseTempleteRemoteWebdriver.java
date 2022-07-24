@@ -36,7 +36,10 @@ public class TestSuiteBaseTempleteRemoteWebdriver {
 	public static WebDriver getDriverInstance(String platform, String browser, String version, String url)
 			throws MalformedURLException {
 		// Provide your hub ip or sauce lab credentials
+
 		String hubURL = "http://192.168.0.2:5555/wd/hub";
+
+
 		WebDriver driver = null;
 		DesiredCapabilities caps = new DesiredCapabilities();
 
