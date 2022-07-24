@@ -21,13 +21,14 @@ public class TestSuiteBaseTempleteRemoteWebdriver {
 
 	public WebDriver driver;
 	protected PageObjects.HomePage homepage;
-	
+	protected PageObjects.SearchResultPage searchresultpage;
 
 	@Parameters({ "platform", "browser", "version", "url" })
 	@BeforeClass(alwaysRun = true)
 	public void setup(String platform, String browser, String version, String url) throws MalformedURLException {
 		driver = getDriverInstance(platform, browser, version, url);
 		homepage = PageFactory.initElements(driver, HomePage.class);
+		searchresultpage = PageFactory.initElements(driver, SearchResultPage.class);
 		
 	}
 
