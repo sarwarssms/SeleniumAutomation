@@ -11,15 +11,9 @@ public class SearchTest extends TestSuiteBase {
 
 	private String OsBrowser = "";
 
-	@Test(priority = 1)
-	public void blankresultPage() throws InterruptedException {
-		OsBrowser = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
-		homepage.clickwikiSearchButton();
-		Thread.sleep(5000);
-		Assert.assertEquals(driver.getTitle(), "Search - Wikipedia");
-	}
 
-	@Test(priority = 2)
+
+	@Test(priority = 1)
 	public void firstSearchTest() throws InterruptedException {
 		OsBrowser = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
 		searchresultpage.fillUpSearchBox("albor");
