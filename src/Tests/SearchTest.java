@@ -7,8 +7,9 @@ import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
 import Utilities.TestSuiteBase;
+import Utilities.TestSuiteBaseTempleteRemoteWebdriver;
 
-public class SearchTest extends TestSuiteBase {
+public class SearchTest extends TestSuiteBaseTempleteRemoteWebdriver {
 
 	private String OsBrowser = "";
 
