@@ -9,7 +9,7 @@ import PageObjects.HomePage;
 import Utilities.TestSuiteBase;
 import Utilities.TestSuiteBaseTempleteRemoteWebdriver;
 
-public class SearchTest extends TestSuiteBaseTempleteRemoteWebdriver {
+public class SearchTest extends TestSuiteBase {
 
 	private String OsBrowser = "";
 
